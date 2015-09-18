@@ -9,8 +9,8 @@
 // treats it as a function declaration not a function expression.
 
 // function foo () {} () will also throw an error, but for a different reason. In this case,
-// the parser will see the function declaration that is syntactically correct, but the parans after it
-// are read as a grouping perator, and will not invoke the function foo. A grouping operator needs to
+// the parser will see the function declaration that is syntactically correct, but the parens after it
+// are read as a grouping operator, and will not invoke the function foo. A grouping operator needs to
 // contain an expression. Empty parens will throw an error. If you put something in the parens like
 // function foo {} (1) an error will not be throw, however foo is not going to be fired.
 
